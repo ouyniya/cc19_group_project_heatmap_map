@@ -71,4 +71,4 @@ function Province() {
   return data && <GeoJSON data={data} style={geoStyle} />;
 }
 
-export default Province
+export default Province;
