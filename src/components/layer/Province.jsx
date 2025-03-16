@@ -39,34 +39,6 @@ function Province() {
     };
   };
 
-  // const geoStyle = (feature) => {
-  //     const province = feature.properties.ADM1_EN
-  //     console.log(province)
-  //     console.log(feature)
-
-  //     if (province === popularProvince[0].province) {
-  //         return {
-  //             weight: 1,
-  //             color: 'deeppink',
-  //             fillColor: 'pink',
-  //             fillOpacity: 0.5
-  //         }
-  //     } else if (province === popularProvince[1].province) {
-  //         return {
-  //             weight: 1,
-  //             color: 'orange',
-  //             fillColor: 'orange',
-  //             fillOpacity: 0.5
-  //         }
-  //     } else if (province === popularProvince[2].province) {
-  //         return {
-  //             weight: 1,
-  //             color: 'yellow',
-  //             fillColor: 'yellow',
-  //             fillOpacity: 0.5
-  //         }
-  //     }
-  // }
 
   return data && <GeoJSON data={data} style={geoStyle} />;
 }

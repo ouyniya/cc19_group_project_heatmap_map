@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router'
 import Layout from '../layouts/Layout'
 
 import Dashboard from "../pages/Dashboard";
-import Mapping from "../pages/Mapping";
 
 function AppRoutes() {
   return (
