@@ -19,7 +19,7 @@ const Dashboard = () => {
     useMapEvents({
       click: (e) => {
         onClick(e.latlng);
-        // console.log(e.latlng);
+        console.log(e.latlng);
       },
     });
     return null;
@@ -58,11 +58,13 @@ const Dashboard = () => {
       >
         <BaseMap />
         {/* <LocationMarker /> */}
-        <Marker position={position}>
+        {position && (
+          <Marker position={position}>
             <Popup>
               You clicked here: <br /> {position.lat.toFixed(5)}, {position.lng.toFixed(5)}
             </Popup>
           </Marker>
+        )}
 
         <Marker position={[13.5, 101]}>
           <Popup>
